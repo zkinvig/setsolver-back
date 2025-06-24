@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: setsolver-back
+    env: java
+    plan: free
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar target/*.jar"
+    branch: main
